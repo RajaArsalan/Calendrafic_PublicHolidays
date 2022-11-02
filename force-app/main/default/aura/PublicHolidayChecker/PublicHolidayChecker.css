@@ -1,0 +1,20 @@
+.THIS .inline-container {
+    display: inline-flex;
+}
+ 
+.THIS .padding-right {
+    padding-right: 20px;
+}
+
+.THIS .mainHeading {
+    font-size : 30px;
+    font-weight: bold;
+   
+    font-color: white;
+    text-align: center;
+    
+}
+
+.THIS .headingBackground{
+     background-color: tomato;
+}
