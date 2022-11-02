@@ -8,7 +8,7 @@ public without sharing class PublicHolidayCheckerCntrl {
         HttpRequest req = new HttpRequest();
         req.setEndpoint(APIconfig.Endpoint__c+'?&api_key='+APIconfig.API_Key__c+'&country='+APIconfig.Country__c+'&year='+year.substring(0, 4));
         req.setHeader('Content-Length', '0');
-        req.setMethod('POST');
+        req.setMethod('GET');
         req.setTimeout(12000);
         HttpResponse res = h.send(req);
         string jsonString = res.getBody();
